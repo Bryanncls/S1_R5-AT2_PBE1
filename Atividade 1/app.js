@@ -22,7 +22,7 @@ app.post("/usuarios/novo", (req, res) => {
         if (!erro) {
             try {
                 usuarios = JSON.parse(dados)
-            } catch (e) {
+            } catch (error) {
                 usuarios = []
             }
         }
